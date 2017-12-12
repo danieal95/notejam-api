@@ -47,7 +47,7 @@ class PadsController < ApplicationController
 
   private
   def pad_params
-    @pad_param = params.require("pad").permit("user_id", "name")
+    @pad_param = params.permit("user_id", "name")
     @user_id = @pad_param['user_id']
     @name = @pad_param['name']
     if (@user_id.present? == false) || (@name.present? == false)

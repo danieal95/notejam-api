@@ -47,7 +47,7 @@ class NotesController < ApplicationController
 
   private
   def note_params
-    @note_param = params.require("note").permit("pad_id", "user_id", "name", "text")
+    @note_param = params.permit("pad_id", "user_id", "name", "text")
     @pad_id = @note_param['pad_id']
     @user_id = @note_param['user_id']
     @name = @note_param['name']
