@@ -1,4 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+ons:
+  user: one
+  name: MyString
 
 one:
   user: one
@@ -7,3 +10,4 @@ one:
 two:
   user: two
   name: MyString
+
